@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 
   <title> Justin Mena's links </title>
 
@@ -11,9 +12,16 @@
       border: 1px red dashed;
     }
 
+    html {
+      min-height: 100%;
+    }
+
     body {
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
+      background: linear-gradient(180deg, #1d5b23, #3b713a, #568753, #729e6c, #8db686, #aacea1, #c6e6bd, #e3ffda);
+      color: rgba(255,255,255,1.0);
     }
 
      /*other declarations*/
@@ -29,6 +37,46 @@
       height: 48px;
       border-radius: 48px;
       object-fit: cover;
+    }
+
+    a{
+      color: rgba(255,255,255,1.0);
+    }
+
+    .item {
+      background-color: rgba(227,151,64,0.29);
+    }
+
+    .main-container{
+      max-width: 640px;
+      margin: auto;
+    }
+
+    .image-row{
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .name-row{
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .social-icons-row{
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .link-text{
+      text-align: center;
+      flex-grow: 1;
     }
   </style>  
 </head>
@@ -65,7 +113,7 @@
   <div class="links-rows">
     <div class="item">
       <img src="/tejj--1GI_FL-8Uw-unsplash.jpg" alt="dumbbells on rack" img class="thumbnail">
-      <a href="https://www.medicalnewstoday.com/articles/benefits-of-exercise"> 
+      <a href="https://www.medicalnewstoday.com/articles/benefits-of-exercise" target="_blank" class="link-text"> 
         Benefits of exercising
       </a>
     </div>  
@@ -73,7 +121,7 @@
       <div class="item">
         <img src="/oberon-copeland-veryinformed-com-lxpLpl_3ykw-unsplash.jpg" alt="screen of ebay dashboard" img class="thumbnail">
 
-        <a href="https://www.3dsellers.com/blog/reselling-on-ebay">
+        <a href="https://www.3dsellers.com/blog/reselling-on-ebay" target="_blank" class="link-text">
           Ebay Flipping Guide
         </a>
     
@@ -82,7 +130,7 @@
       <div class="item">
         <img src="/engin-akyurt-CGnoRQZGWmw-unsplash.jpg" alt="webpage of genesisone" img class="thumbnail">
         
-        <a href="https://mygenesisone.com">
+        <a href="https://mygenesisone.com" target="_blank" class="link-text">
           Genesis One 
         </a>
       </div> 
